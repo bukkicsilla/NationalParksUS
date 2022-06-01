@@ -73,7 +73,22 @@ footer ul{
   list-style: none;
   display: flex;
   justify-content: center;
+  //border: 1px solid red;
 }
 footer li{
   margin: 0 15px;
+  //border: 1px solid gold;
 }
+/*#btn-modal, #btn-review{
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: white;
+  color: forestgreen;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 2px solid forestgreen;
+}*/
+
+

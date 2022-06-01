@@ -96,3 +96,10 @@ a{
   color: rgb(69, 169, 42);
   margin: 100px 0 60px;
 }
+
+img{
+  transition: transform 1s ease-in-out 0.3s;
+}
+img:hover{
+  transform: scale(1.1);
+}

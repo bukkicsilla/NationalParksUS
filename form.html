@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>National Parks</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  <link href="shared.css" rel="stylesheet" type="text/css" />
+   <link href="form.css" rel="stylesheet" 
+     type="text/css">
+
+ </head>
+ <body>
+   <div id='donut'>
+     <button id="btn-modal"> OPEN </button>
+   <a href="index.html"> HOME </a>
+   </div>
+   
+   <div id="mymodal" class="modal">
+   <form action="" method="GET">
+     <div>
+     <label for="nat-park"> Your favorite national park </label>
+     <input type="text" name="park" id="nat-park">
+     <label for="emailid"> Your email address </label>
+     <input type="email" name="email" id="emailid">
+     <button>Submit</button>
+     </div>
+     <div id="closemodal" class="close">  &times;
+     </div>
+   </form>
+   </div>
+   
+  <!--<script>
+    let modal = document.getElementById("mymodal")
+    let b = document.getElementById("btn-modal")
+    let d = document.getElementById("closemodal")
+    
+    b.onclick = function(){
+      modal.style.display = "block"
+    }
+    d.onclick = function(){
+      modal.style.display = "none"
+    }
+    window.onclick = function(){
+      if(event.target == modal){
+        modal.style.display = "none"
+      }
+    }
+  </script>-->
+   <script src="script.js"> </script>
+ </body>
+</html>

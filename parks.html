@@ -10,8 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="shared.css" rel="stylesheet" type="text/css" />
   <link href="parks.css" rel="stylesheet" type="text/css" />
+  <link href="form.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -22,8 +24,8 @@
     <nav>
     <ul>
       <li><a class="links" href="parks.html"> Parks </a></li>
-      <li><a class="links" href=""> Trees </a></li>
-      <li><a class="links" href=""> About </a> </li>
+      <li><a class="links" href="trees.html"> Trees </a></li>
+      <li><a class="links" href="about.html"> About </a> </li>
     </ul>
     </nav>
   </header>
@@ -67,7 +69,7 @@
       </div>
     </li>
     <li>
-        <img src="images/parks/greatteton_wyoming.png" alt="Grand Teton National Park">
+        <img src="images/parks/grandteton_wyoming.png" alt="Grand Teton National Park">
         <div class="park-content">
           <div>
             <h2> Grand Teton National Park </h2>
@@ -171,15 +173,77 @@
 
 </ul>
 </main>
+  
 <footer>
   <ul>
     <li> <a href="https://www.instagram.com/">
       <img src="images/icons/insta.png" alt="Instagram"> </a></li>
     <li> <a href="https://www.facebook.com/">
       <img src="images/icons/facebook.png" alt="Facebook"> </a> </li>
+    <li> <button id="btn-modal">+</button></li>
+    <!--<li> <button id="btn-review"><i id="star"class="fa fa-star"></i></button></li>-->
   </ul>
 </footer>
-<script src="script.js"></script>
+
+  <div id="mymodal" class="modal">
+   <form action="" method="GET">
+     <div>
+     <label for="favorite-park"> Which national park would you visit? </label>
+       <select id="favorite-park" name="nationalpark">
+         <option value="denali">Denali</option>
+         <option value="glacier">Glacier</option>
+         <option>Grand Canyon </option>
+         <option>Grand Teton </option>
+         <option>Great Basin</option>
+         <option>Great Smoky</option>
+         <option>Olympic</option>
+         <option>Rocky Mountain</option>
+         <option>Shenandoah</option>
+         <option>Yosemite</option>
+         <option>Zion</option>
+       </select>
+      <p> How many national parks did you visit in the US? </p>
+       <div class="radio-np">
+     <input type="radio" name="numberofNP" id="onetwo" value="oneortwo" required>
+       <label for="onetwo">1 or 2</label>
+       </div>
+       <div class="radio-np">
+      <input type="radio" name="numberofNP" id="threefour" value="threeorfour" required>
+       <label for="threefour">3 or 4 </label>
+       </div>
+       <div class="radio-np">
+       <input type="radio" name="numberofNP" id="fivemore" value="fiveormore" required>
+       <label for="fivemore">5 or more </label>
+       </div>
+       <div class="checkbox-np">
+        <input type="checkbox" id="signup" name="signup">
+         <label for="signup">Sign up? </label>
+       </div>
+     <button id="sbm">Submit</button>
+     </div>
+     <div id="closemodal" class="close">  &times;
+     </div>
+   </form>
+   </div>
+  
+  <!--<script>
+    let m = document.getElementById("mymodal")
+    let bm = document.getElementById("btn-modal")
+    let dm = document.getElementById("closemodal")
+    
+    bm.onclick = function(){
+    m.style.display = "block"
+    }
+    dm.onclick = function(){
+      m.style.display = "none"
+    }
+    window.onclick = function(){
+      if(event.target == m){
+    m.style.display = "none"
+  }
+}
+  </script>-->
+  <script src="parks.js"></script>
 </body>
 
 </html>

@@ -10,8 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Oleo+Script:wght@700&family=Quicksand:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="shared.css" rel="stylesheet" type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="form.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -22,8 +24,8 @@
     <nav>
     <ul>
       <li><a class="links" href="parks.html"> Parks </a></li>
-      <li><a class="links" href=""> Trees </a></li>
-      <li><a class="links" href=""> About </a> </li>
+      <li><a class="links" href="trees.html"> Trees </a></li>
+      <li><a class="links" href="about.html"> About </a> </li>
     </ul>
     </nav>
   </header>
@@ -45,7 +47,7 @@
           <img src="images/parks/greatsmoky_tennessee.png" alt="Great Smoky Mountans">
            <p><strong> Great Smoky </strong> Tennessee</p></li>
         <li class="bestpark">
-          <img src="images/parks/greatteton_wyoming.png" alt="Grand Teton National Park">
+          <img src="images/parks/grandteton_wyoming.png" alt="Grand Teton National Park">
           <p><strong> Grand Teton </strong> Wyoming </p></li>
         <li class="bestpark">
           <img src="images/parks/yosemite_california.png" alt="Yosemite National Park">
@@ -73,8 +75,29 @@
         <img src="images/icons/insta.png" alt="Instagram"> </a></li>
       <li> <a href="https://www.facebook.com/">
         <img src="images/icons/facebook.png" alt="Facebook"> </a> </li>
+      <!--<li> <button id="btn-modal">+</button></li>-->
+      <li> <button id="btn-review"><i id="star"class="fa fa-star"></i></button></li>
     </ul>
   </footer>
+
+  <div id="myreview" class="modal">
+   <form action="" method="GET">
+     <div>
+     <label for="emailid"> Your email address </label>
+     <input type="email" name="email" id="emailid" placeholder="name@email.com" required>
+       
+       <label for="ratingid"> Your rating: </label>
+       <textarea id="ratingid" name="rating" rows="5"></textarea>
+       
+      <label for="star"> How many stars? (1-5) </label>
+      <input type="number" name="star" id="starid" min="1" max="5" required>
+       
+     <button id="sbm">Submit</button>
+     </div>
+     <div id="closemodal" class="close">  &times;
+     </div>
+   </form>
+   </div>
   <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(217, 255, 204);
+}
+a{
+  text-decoration: none;
+}
+header{
+  position: static;
+}
+#page-logo a{
+  //text-decoration: underline;
+}
+main ul{
+  width: 1200px;
+  margin: 30px 100px 60px 50px;
+  padding-left: 30px;
+  //display: flex;
+  //flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px 60px;
+  //border: 2px solid red;
+}
+main li img{
+  width: 180px;
+  height: 156px;
+  object-fit: cover;
+  float: right;
+}
+main li{
+  width: 400px;
+  display:flex;
+  background-color: lightyellow;
+  box-shadow: 1px 1px 3px rgb(0,0,0,0.2);
+  border-radius:5px;
+  overflow: hidden;
+}
+
+.tree-content{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.warning{
+  color: red;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
